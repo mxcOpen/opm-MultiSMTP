@@ -6,9 +6,9 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst">
-    <h1>[% Translate("SMTP Management") | html %]</h1>
-    <div class="SidebarColumn">
+<div class="MainBox ActionsSideBar ARIARoleMain LayoutFixedSidebar SidebarFirst">
+    <div class="SidebarColumn ActionsSideBarComp">
+        <h1>[% Translate("SMTP Management") | html %]</h1>
         <div class="WidgetSimple">
             <div class="Header">
                 <h2>[% Translate("Actions") | html %]</h2>
@@ -143,11 +143,11 @@
                         </div>
                         <div class="Clear"></div>
 
-
-                        <div class="Field">
-                            <button class="Primary CallForAction" type="submit" value="[% Translate("Save") | html %]"><span>[% Translate("Save") | html %]</span></button>
-                            [% Translate("or") | html %]
-                            <a href="[% Env("Baselink") %]Action=[% Env("Action") %]">[% Translate("Cancel") | html %]</a>
+                        <div class="field-wrapper form-button-actions">
+                            <div class="Field buttons-field">
+                                <button class="Primary CallForAction btn-primary btn-main btn-width-md" type="submit" value="[% Translate("Save") | html %]"><span>[% Translate("Save") | html %]</span></button>
+                                <a class="btn-cancel-ghost btn-main btn-width-md" href="[% Env("Baselink") %]Action=[% Env("Action") %]">[% Translate("Cancel") | html %]</a>
+                            </div>
                         </div>
                         <div class="Clear"></div>
                     </fieldset>

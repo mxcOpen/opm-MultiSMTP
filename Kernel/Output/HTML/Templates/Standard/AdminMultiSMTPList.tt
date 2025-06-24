@@ -9,9 +9,9 @@
 # did not receive this file, see http://www.gnu.org/licenses/agpl.txt.
 # --
 
-<div class="MainBox ARIARoleMain LayoutFixedSidebar SidebarFirst">
-    <h1>[% Translate("SMTP Management") | html %]</h1>
-    <div class="SidebarColumn">
+<div class="MainBox ActionsSideBar ARIARoleMain LayoutFixedSidebar SidebarFirst">
+    <div class="SidebarColumn ActionsSideBarComp">
+        <h1>[% Translate("SMTP Management") | html %]</h1>
         <div class="WidgetSimple">
             <div class="Header">
                 <h2>[% Translate("Actions") | html %]</h2>

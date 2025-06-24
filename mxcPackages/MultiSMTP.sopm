@@ -2,10 +2,9 @@
 <otrs_package version="1.0">
   <!-- GENERATED WITH OPM::Maker::Command::sopm (1.1.0) -->
   <Name>MultiSMTP</Name>
-  <Version>6.3.3</Version>
-  <Framework>6.3.x</Framework>
-  <Framework>6.4.x</Framework>
-  <Framework>6.5.x</Framework>
+  <Version>7.3.3</Version>
+  <Framework>7.0.x</Framework>
+  <Framework>7.1.x</Framework>
   <Vendor>Perl-Services.de</Vendor>
   <URL>https://www.perl-services.de</URL>
   <Description Lang="de">Ein Modul, mit dem man mehrere SMTP-Server für Znuny nutzen kann.</Description>
@@ -14,24 +13,24 @@
   <Description Lang="ru">Модуль, который позволяет Znuny использовать несколько SMTP-серверов.</Description>
   <License>GNU AFFERO GENERAL PUBLIC LICENSE Version 3, November 2007</License>
   <Filelist>
-    <File Permission="644" Location="doc/ru/MultiSMTP.pod"/>
-    <File Permission="644" Location="doc/en/MultiSMTP.pod"/>
-    <File Permission="644" Location="doc/hu/MultiSMTP.pod"/>
-    <File Permission="644" Location="doc/MultiSMTP.json"/>
-    <File Permission="755" Location="Kernel/System/MultiSMTP.pm"/>
-    <File Permission="755" Location="Kernel/System/Email/MultiSMTP/SMTPS.pm"/>
-    <File Permission="755" Location="Kernel/System/Email/MultiSMTP/SMTPTLS.pm"/>
-    <File Permission="755" Location="Kernel/System/Email/MultiSMTP/SMTP.pm"/>
-    <File Permission="755" Location="Kernel/System/Email/MultiSMTP.pm"/>
-    <File Permission="755" Location="Kernel/Modules/AdminMultiSMTP.pm"/>
     <File Permission="644" Location="Kernel/Config/Files/XML/MultiSMTP.xml"/>
-    <File Permission="644" Location="Kernel/Output/HTML/Templates/Standard/AdminMultiSMTPList.tt"/>
-    <File Permission="644" Location="Kernel/Output/HTML/Templates/Standard/AdminMultiSMTPForm.tt"/>
     <File Permission="755" Location="Kernel/Language/hu_MultiSMTP.pm"/>
     <File Permission="755" Location="Kernel/Language/zh_CN_MultiSMTP.pm"/>
     <File Permission="755" Location="Kernel/Language/ru_MultiSMTP.pm"/>
     <File Permission="755" Location="Kernel/Language/de_MultiSMTP.pm"/>
-    <File Permission="644" Location="MultiSMTP.sopm"/>
+    <File Permission="755" Location="Kernel/System/Email/MultiSMTP.pm"/>
+    <File Permission="755" Location="Kernel/System/Email/MultiSMTP/SMTPS.pm"/>
+    <File Permission="755" Location="Kernel/System/Email/MultiSMTP/SMTPTLS.pm"/>
+    <File Permission="755" Location="Kernel/System/Email/MultiSMTP/SMTP.pm"/>
+    <File Permission="755" Location="Kernel/System/MultiSMTP.pm"/>
+    <File Permission="644" Location="Kernel/Output/HTML/Templates/Standard/AdminMultiSMTPList.tt"/>
+    <File Permission="644" Location="Kernel/Output/HTML/Templates/Standard/AdminMultiSMTPForm.tt"/>
+    <File Permission="755" Location="Kernel/Modules/AdminMultiSMTP.pm"/>
+    <File Permission="644" Location=".gitignore"/>
+    <File Permission="644" Location="doc/MultiSMTP.json"/>
+    <File Permission="644" Location="doc/hu/MultiSMTP.pod"/>
+    <File Permission="644" Location="doc/en/MultiSMTP.pod"/>
+    <File Permission="644" Location="doc/ru/MultiSMTP.pod"/>
   </Filelist>
   <DatabaseInstall Type="post">
     <TableCreate Name="ps_multi_smtp">
